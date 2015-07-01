@@ -20,7 +20,7 @@ tidyData <- function()
      #Arreglo de la columna Date y Time:
      date_time <- paste(col_date,col_time); date_time <- gsub("mar","03",date_time)
      date_time <- gsub("2015","15",date_time); date_time <- gsub(" a. m.","", date_time)
-     
+      
      #Creacion de lista donde se guardarán vectores lógicos
      logical_vectors <- vector(mode= "list", length= length(levels(raw_data$Tagname)))
      value_vectors <- vector(mode= "list", length= length(levels(raw_data$Tagname)))
