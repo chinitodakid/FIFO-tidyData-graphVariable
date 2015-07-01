@@ -19,7 +19,7 @@ graphVariable <- function(){
      LogTagname <- colTagname == variable 
      Values <- data$Value
      Fecha <- data$Date
-     
+      
      print(paste("La cantidad de valores para ", variable, " que se encuentran en este archivo son: ", sum(LogTagname),sep=""))
      horas <- as.character(data$Time); horas <- gsub(" a. m.","", horas)
      
